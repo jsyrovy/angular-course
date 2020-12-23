@@ -26,7 +26,7 @@
       <p *ngIf="showDetails">Secret Password = tuna</p>
       <p
         *ngFor="let log of history"
-        [ngStyle]="{ backgroundColor: log.id >= 5 ? 'blue' : 'white' }"
+        [ngStyle]="{ backgroundColor: log.id >= 5 ? 'blue' : 'transparent' }"
         [ngClass]="{ white: log.id >= 5 }"
       >
         {{ log.id }} - {{ log.status }}

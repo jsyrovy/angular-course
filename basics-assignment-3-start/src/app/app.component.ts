@@ -8,11 +8,9 @@ import { Component } from "@angular/core";
 export class AppComponent {
   showDetails = false;
   history = [];
-  currentId = 0;
 
   onShowDetails() {
     this.showDetails = !this.showDetails;
-    this.history.push({ id: this.currentId, status: this.showDetails });
-    this.currentId++;
+    this.history.push({ id: this.history.length + 1, status: this.showDetails });
   }
 }
