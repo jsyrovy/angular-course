@@ -25,11 +25,11 @@
       <button (click)="onShowDetails()">Show Details</button>
       <p *ngIf="showDetails">Secret Password = tuna</p>
       <p
-        *ngFor="let log of history"
-        [ngStyle]="{ backgroundColor: log.id >= 5 ? 'blue' : 'transparent' }"
-        [ngClass]="{ white: log.id >= 5 }"
+        *ngFor="let log of history; let i = index"
+        [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+        [ngClass]="{ white: i >= 4 }"
       >
-        {{ log.id }} - {{ log.status }}
+        {{ log }}
       </p>
     </div>
   </div>

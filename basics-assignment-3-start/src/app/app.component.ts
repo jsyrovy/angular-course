@@ -11,6 +11,6 @@ export class AppComponent {
 
   onShowDetails() {
     this.showDetails = !this.showDetails;
-    this.history.push({ id: this.history.length + 1, status: this.showDetails });
+    this.history.push(new Date());
   }
 }
