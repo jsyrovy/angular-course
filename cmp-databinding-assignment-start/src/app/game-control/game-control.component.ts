@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 
 @Component({
   selector: "app-game-control",
@@ -6,33 +6,21 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./game-control.component.css"],
 })
 export class GameControlComponent implements OnInit {
+  @Output() intervalFired = new EventEmitter<number>();
   cycle = 0;
   interval;
-  oddNumbers: Array<number> = [];
-  evenNumbers: Array<number> = [];
   constructor() {}
 
   ngOnInit(): void {}
 
   onStart() {
-    this.interval = setInterval(this.doCycle.bind(this), 1000);
+    this.interval = setInterval(() => {
+      this.cycle++;
+      this.intervalFired.emit(this.cycle);
+    }, 1000);
   }
 
-  doCycle() {
-    this.cycle++;
-
-    if (this.isEven(this.cycle)) {
-      this.evenNumbers.push(this.cycle);
-      return;
-    }
-    this.oddNumbers.push(this.cycle);
-
-    console.log(this.cycle);
-  }
-
-  isEven(n: number) {
-    return n % 2 == 0;
-  }
+  
 
   onStop() {
     clearInterval(this.interval);
