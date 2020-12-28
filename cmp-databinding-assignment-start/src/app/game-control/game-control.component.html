@@ -1,1 +1,12 @@
-<p>game-control works!</p>
+<div class="btn-group">
+  <button class="btn btn-success" (click)="onStart()">Start</button>
+  <button class="btn btn-danger" (click)="onStop()">Stop</button>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <app-odd *ngFor="let odd of oddNumbers">{{ odd }}</app-odd>
+  </div>
+  <div class="col-xs-6">
+    <app-even *ngFor="let even of evenNumbers">{{ even }}</app-even>
+  </div>
+</div>
