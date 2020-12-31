@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
       <a
-        [routerLink]="['/servers', server.id, 'edit']"
+        [routerLink]="['/servers', server.id]"
         [queryParams]="{ key: 'value' }"
         fragment="loading"
         class="list-group-item"
@@ -11,10 +11,5 @@
         {{ server.name }}
       </a>
     </div>
-  </div>
-  <div class="col-xs-12 col-sm-4">
-    <app-edit-server></app-edit-server>
-    <hr />
-    <app-server></app-server>
   </div>
 </div>
