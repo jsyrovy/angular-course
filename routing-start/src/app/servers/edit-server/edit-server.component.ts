@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Params, Router } from "@angular/router";
-import { timeStamp } from "console";
 import { Observable } from "rxjs";
 
 import { ServersService } from "../servers.service";
