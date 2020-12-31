@@ -9,6 +9,7 @@ import { ServerComponent } from "./servers/server/server.component";
 import { ServersComponent } from "./servers/servers.component";
 import { UserComponent } from "./users/user/user.component";
 import { UsersComponent } from "./users/users.component";
+import { AuthGuardService } from "./auth-guard.service";
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   },
   {
     path: "servers",
+    canActivate: [AuthGuardService],
     component: ServersComponent,
     children: [
       { path: ":id", component: ServerComponent },
