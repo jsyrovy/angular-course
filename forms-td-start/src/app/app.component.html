@@ -12,7 +12,14 @@
               name="username"
               ngModel
               required
+              #username="ngModel"
             />
+            <span
+              class="help-block"
+              *ngIf="!username.valid && username.touched"
+            >
+              Please enter a valid user name.
+            </span>
           </div>
           <button class="btn btn-default" type="button">
             Suggest an Username
@@ -27,7 +34,11 @@
               ngModel
               email
               required
+              #email="ngModel"
             />
+            <span class="help-block" *ngIf="!email.valid && email.touched">
+              Please enter a valid email.
+            </span>
           </div>
         </div>
         <div class="form-group">
@@ -37,7 +48,9 @@
             <option value="teacher">Your first teacher?</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">
+          Submit
+        </button>
       </form>
     </div>
   </div>
