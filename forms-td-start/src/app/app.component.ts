@@ -14,6 +14,7 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = "Superuser";
+    this.form.form.patchValue({ userData: { username: suggestedName } });
   }
 
   onSubmit() {
