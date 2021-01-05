@@ -13,6 +13,69 @@
            Upon submitting the form, you should simply print the Value of the Form to the Console.
            Optionally, display it in your template.
       -->
+      <form (ngSubmit)="onSubmit()" #f="ngForm">
+        <div class="form-group">
+          <label for="email">Mail</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            ngModel="@"
+            email
+            required
+            #email="ngModel"
+          />
+          <span class="help-block" *ngIf="!email.valid && email.touched">
+            Please enter a valid email.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="subscription">Select Subscription</label>
+          <select
+            class="form-control"
+            name="subscription"
+            [ngModel]="defaultSubscription"
+          >
+            <option
+              *ngFor="let subscription of subscriptions"
+              [value]="subscription"
+            >
+              {{ subscription }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            ngModel
+            required
+            #password="ngModel"
+          />
+          <span class="help-block" *ngIf="!password.valid && password.touched">
+            Please enter a password.
+          </span>
+        </div>
+
+        <span class="help-block" *ngIf="!f.valid && f.touched">
+          Form isn't valid.
+        </span>
+
+        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="row" *ngIf="account.email !== ''">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <p>Mail: {{ account.email }}</p>
+      <p>Subscription: {{ account.subscription }}</p>
+      <p>Password: {{ account.password }}</p>
     </div>
   </div>
 </div>
