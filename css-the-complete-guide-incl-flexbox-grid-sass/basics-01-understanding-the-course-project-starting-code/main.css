@@ -1,3 +1,7 @@
+body {
+  font-family: "Monserrat", sans-serif;
+}
+
 #product-overview {
   background: #ff1b68;
 }
@@ -8,5 +12,5 @@ h1 {
 }
 
 .section-title {
-    color: #2ddf5c;
+  color: #2ddf5c;
 }
