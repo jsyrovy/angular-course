@@ -5,9 +5,8 @@ body {
 
 #product-overview {
   background: #ff1b68;
-  padding: 20px;
-  border: 5px black solid;
-  margin: 25px;
+  width: 50%;
+  height: 300px;
 }
 
 #product-overview h1 {
