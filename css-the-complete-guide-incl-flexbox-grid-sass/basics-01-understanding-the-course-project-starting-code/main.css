@@ -64,10 +64,11 @@ body {
   text-decoration: none;
 }
 
-.main-nav__item a:hover {
+.main-nav__item a:hover,
+.main-nav__item a:active {
   color: white;
 }
 
-.main-nav__item a:active {
-  color: #ff1b68;
+p::first-letter {
+  font-weight: bold;
 }
