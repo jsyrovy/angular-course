@@ -1,0 +1,19 @@
+.box {
+  background: #2a9d8f;
+  color: white;
+  width: 45%;
+  height: 300px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  display: inline-block;
+  border: 3px solid #264653;
+  box-sizing: border-box;
+}
+
+.box:first-of-type {
+  display: none;
+}
+
+.box:last-of-type:hover {
+  background-color: #264653;
+}
