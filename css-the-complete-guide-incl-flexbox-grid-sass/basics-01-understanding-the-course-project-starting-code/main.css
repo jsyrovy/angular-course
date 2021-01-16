@@ -19,12 +19,9 @@ body {
   font-family: "Anton", sans-serif;
 }
 
-.plans {
-  text-align: center;
-}
-
 .section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 .plan {
@@ -99,6 +96,46 @@ button {
   outline: none;
 }
 
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
 .main-header {
   background: #2ddf5c;
   width: 100%;
@@ -160,8 +197,4 @@ button {
   color: #ff1b68;
   background: white;
   border: none;
-}
-
-p::first-letter {
-  font-weight: bold;
 }
