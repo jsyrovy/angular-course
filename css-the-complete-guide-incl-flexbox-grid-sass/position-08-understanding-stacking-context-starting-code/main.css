@@ -57,14 +57,18 @@ body {
 .image-1 {
   top: 200px;
   left: 230px;
+  position: fixed;
 }
 
 .image-2 {
   top: 230px;
   left: 260px;
+  position: fixed;
+  z-index: 1;
 }
 
 .image-3 {
   left: 300px;
   top: 260px;
+  position: fixed;
 }
