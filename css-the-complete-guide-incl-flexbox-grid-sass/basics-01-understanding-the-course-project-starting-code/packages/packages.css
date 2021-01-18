@@ -34,12 +34,24 @@ main {
   padding: 16px;
 }
 
+.clear-fix {
+  clear: both;
+}
+
 #plus {
   background: rgba(213, 255, 220, 0.95);
 }
 
 #free {
   background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-left: 4px solid #0e4f1f;
+  border-right: none;
+}
+
+#free:hover,
+#free:active {
+  border-left-color: #ff1b68;
 }
 
 #premium {
