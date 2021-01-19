@@ -1,10 +1,22 @@
-const backdrop = document.querySelector(".backdrop");
-const modal = document.querySelector(".modal");
+function setPopupVisibility(visible) {
+  const backdrop = document.querySelector(".backdrop");
+  const modal = document.querySelector(".modal");
+  const display = visible ? "block" : "none";
+
+  backdrop.style.display = display;
+  modal.style.display = display;
+}
+
 const buttons = document.querySelectorAll(".plan .button");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    setPopupVisibility(true);
   });
+});
+
+const modalAction = document.querySelector("button.modal__action");
+
+modalAction.addEventListener("click", () => {
+  setPopupVisibility(false);
 });
