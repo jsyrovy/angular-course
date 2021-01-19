@@ -12,7 +12,7 @@ buttons.forEach((button) => {
   });
 });
 
-modalAction.addEventListener("click", () => {
+modalAction?.addEventListener("click", () => {
   backdrop.classList.remove("open");
   modal.classList.remove("open");
 });
@@ -24,6 +24,6 @@ toggleButton.addEventListener("click", () => {
 
 backdrop.addEventListener("click", () => {
   backdrop.classList.remove("open");
-  modal.classList.remove("open");
   mobileNav.classList.remove("open");
+  modal?.classList.remove("open");   
 });
