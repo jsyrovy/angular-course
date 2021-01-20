@@ -1,6 +1,5 @@
 main {
   padding-top: 2rem;
-  margin: 3rem 0;
 }
 
 .background {
@@ -22,7 +21,7 @@ main {
 
 .package:hover,
 .package:active {
-  border-color: #ff1b68;
+  border-color: #ff5454;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,11 +40,11 @@ main {
   padding: 0.5rem;
   font-size: 0.8rem;
   color: white;
-  background: #ff1b68;
+  background: #ff5454;
 }
 
 .package__sub-title {
-  color: #929292;
+  color: #979797;
 }
 
 .package__description {
@@ -53,7 +52,6 @@ main {
   background: white;
   border: 1px solid #0e4f1f;
   font-size: 1.2rem;
-  padding: 1rem;
 }
 
 .clear-fix {
@@ -90,7 +88,8 @@ main {
 
 @media (min-width: 85rem) {
   main {
-    margin: 3rem auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 85rem;
   }
 
