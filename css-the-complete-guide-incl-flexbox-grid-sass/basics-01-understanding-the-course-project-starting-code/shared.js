@@ -25,5 +25,5 @@ toggleButton.addEventListener("click", () => {
 backdrop.addEventListener("click", () => {
   backdrop.classList.remove("open");
   mobileNav.classList.remove("open");
-  modal?.classList.remove("open");   
+  modal?.classList.remove("open");
 });
