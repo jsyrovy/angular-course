@@ -59,11 +59,13 @@ main {
 }
 
 .package__description {
+  padding: 1rem;
   color: #0e4f1f;
   background: white;
   border: 1px solid #0e4f1f;
   font-size: 1.2rem;
   font-family: AnonymousPro, sans-serif;
+  font-weight: 700;
 }
 
 .clear-fix {
