@@ -63,7 +63,7 @@ main {
   color: #0e4f1f;
   background: white;
   border: 1px solid #0e4f1f;
-  font: 700 1.2rem AnonymousPro, sans-serif;
+  font-size: 1.2rem;
 }
 
 .clear-fix {
