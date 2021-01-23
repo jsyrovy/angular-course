@@ -44,6 +44,7 @@ body {
   font-size: 1.8rem;
   order: -2;
   align-self: flex-start;
+  flex-basis: 300px;
 }
 
 .item-3 {
