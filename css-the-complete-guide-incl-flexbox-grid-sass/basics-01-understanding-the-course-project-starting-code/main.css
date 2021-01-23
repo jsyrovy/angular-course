@@ -79,22 +79,27 @@
 
 @media (min-width: 40rem) {
   .plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
-    margin: 0.5rem;
     min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 28rem;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 1;
   }
 }
 
@@ -113,7 +118,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .key-feature__image {
@@ -135,8 +139,13 @@
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
+  }
+
+  .key-feature__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
