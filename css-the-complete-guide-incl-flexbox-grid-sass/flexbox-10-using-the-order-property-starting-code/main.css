@@ -43,6 +43,7 @@ body {
   width: 250px;
   font-size: 1.8rem;
   order: -2;
+  align-self: flex-start;
 }
 
 .item-3 {
@@ -73,6 +74,7 @@ body {
   margin: 10px;
   width: 350px;
   order: 1;
+  align-self: flex-end;
 }
 
 .item-6 {
