@@ -21,7 +21,7 @@ body {
   height: 1300px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -75,6 +75,7 @@ body {
   width: 350px;
   order: 1;
   align-self: flex-end;
+  flex-grow: 4;
 }
 
 .item-6 {
@@ -84,4 +85,5 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+  flex-grow: 1;
 }
