@@ -15,17 +15,13 @@
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column: 1 / -1;
   grid-row-start: row-2-start;
 }
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-column-start: 2;
-  grid-column-end: span 3;
-  grid-row-start: row-1-start;
-  grid-row-end: span 2;
+  grid-area: row-1-start / 2 / row-2-end / span 3;
 }
 
 .el4 {
