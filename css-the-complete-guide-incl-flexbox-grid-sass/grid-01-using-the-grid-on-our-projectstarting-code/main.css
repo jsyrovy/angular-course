@@ -6,6 +6,7 @@
   grid-template-rows:
     [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 200px)
     [row-2-end];
+  grid-gap: 10px;
   height: 500px;
 }
 
