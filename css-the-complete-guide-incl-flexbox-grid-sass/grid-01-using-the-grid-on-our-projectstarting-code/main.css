@@ -4,6 +4,7 @@
   /* grid-template-columns: 200px 150px 20% 1fr; */
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 5rem minmax(10px, 200px);
+  height: 500px;
 }
 
 .el1 {
@@ -12,14 +13,17 @@
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
 }
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: span 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: span 2;
 }
 
 .el4 {
