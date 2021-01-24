@@ -6,25 +6,33 @@
   grid-template-rows:
     [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 200px)
     [row-2-end];
+  grid-template-areas:
+    "header header header header"
+    "side . main main"
+    "footer footer footer footer";
   grid-gap: 10px;
   height: 500px;
 }
 
 .el1 {
   background: rgba(255, 154, 72, 0.5);
+  grid-area: side;
 }
 
 .el2 {
   background: rgba(255, 0, 0, 0.5);
-  grid-column: 1 / -1;
-  grid-row-start: row-2-start;
+  /* grid-column: 1 / -1;
+  grid-row-start: row-2-start; */
+  grid-area: main;
 }
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-area: row-1-start / 2 / row-2-end / span 3;
+  /* grid-area: row-1-start / 2 / row-2-end / span 3; */
+  grid-area: header;
 }
 
 .el4 {
   background: rgba(0, 4, 255, 0.5);
+  grid-area: footer;
 }
