@@ -2,9 +2,9 @@
   margin: 20px;
   display: grid;
   /* grid-template-columns: 200px 150px 20% 1fr; */
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: [hd-start] repeat(4, [col-start] 25% [col-end]) [hd-end];
   grid-template-rows:
-    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 200px)
+    [hd-start] 5rem [hd row-2-start] minmax(10px, 200px)
     [row-2-end];
   grid-template-areas:
     "header header header header"
@@ -17,6 +17,7 @@
 .el1 {
   background: rgba(255, 154, 72, 0.5);
   grid-area: side;
+  grid-column: col-start 2 / col-end 2;
 }
 
 .el2 {
@@ -29,7 +30,8 @@
 .el3 {
   background: rgba(0, 128, 0, 0.5);
   /* grid-area: row-1-start / 2 / row-2-end / span 3; */
-  grid-area: header;
+  /* grid-area: header; */
+  grid-area: hd;
 }
 
 .el4 {
