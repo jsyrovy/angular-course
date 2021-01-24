@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  background-color: #264653;
+}
+
+div {
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.header {
+  background-color: #2a9d8f;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.sidebar {
+  background-color: #e9c46a;
+}
+
+.main-content {
+  background-color: #f4a261;
+}
+
+.footer {
+  background-color: #e76f51;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
