@@ -28,9 +28,10 @@ body {
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
-}
-.sass-introduction p {
-  margin: 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .sass-details {
@@ -45,9 +46,10 @@ body {
 
 .section-header {
   border-bottom: 0.05rem solid #521751;
-}
-.section-header h1 {
-  margin: 0 0 1rem 0;
+
+  h1 {
+    margin: 0 0 1rem 0;
+  }
 }
 
 .documentation-links {
@@ -59,23 +61,26 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-}
-.documentation-links li {
-  margin: 0.2rem 0;
-  background: white;
-}
-.documentation-links .documentation-link {
-  text-decoration: none;
-  color: #521751;
-  display: block;
-  padding: 0.2rem;
-  border: 0.05rem solid #521751;
-}
-.documentation-links .documentation-link:hover,
-.documentation-links .documentation-link:active {
-  color: white;
-  background: #fa923f;
-  border-color: #fa923f;
+
+  li {
+    margin: 0.2rem 0;
+    background: white;
+  }
+
+  .documentation-link {
+    text-decoration: none;
+    color: #521751;
+    display: block;
+    padding: 0.2rem;
+    border: 0.05rem solid #521751;
+  }
+
+  .documentation-link:hover,
+  .documentation-link:active {
+    color: white;
+    background: #fa923f;
+    border-color: #fa923f;
+  }
 }
 
 @media (min-width: 40rem) {
@@ -88,9 +93,7 @@ body {
   }
 
   .sass-introduction,
-.sass-details {
+  .sass-details {
     width: 30rem;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
