@@ -4,6 +4,9 @@
   grid-template-columns: repeat(2, 15rem);
   justify-content: center;
   grid-gap: 1.5rem;
+  grid-auto-rows: minmax(auto, 8rem);
+  /* grid-auto-flow: column;
+  grid-auto-columns: 10rem; */
 }
 
 .quote {
