@@ -2,6 +2,7 @@ $colors: (
   main: #521751,
   secondary: #fa923f,
 );
+$main-color-light: lighten(map-get($colors, main), 72%);
 $main-border: 0.05rem solid map-get($colors, main);
 
 @import "typography.css";
@@ -31,7 +32,7 @@ body {
 
 .sass-introduction {
   border: $main-border;
-  background: #fae5ff;
+  background: $main-color-light;
   padding: 2rem;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
@@ -45,7 +46,7 @@ body {
 
 .sass-details {
   border: $main-border;
-  background: #fae5ff;
+  background: $main-color-light;
   padding: 1rem;
   text-align: center;
   margin: 2rem 0;
