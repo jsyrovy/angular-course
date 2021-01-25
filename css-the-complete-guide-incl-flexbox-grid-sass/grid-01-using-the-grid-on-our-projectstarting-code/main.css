@@ -3,9 +3,7 @@
   display: grid;
   /* grid-template-columns: 200px 150px 20% 1fr; */
   grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
-  grid-template-rows:
-    [hd-start] 5rem [hd row-2-start] minmax(10px, 20rem)
-    [row-2-end];
+  grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, 20rem) [row-2-end row-3-start] 100px [row-3-end];
   grid-template-areas:
     "header header header header"
     "side . main main"
@@ -28,6 +26,8 @@
   /* grid-column: 1 / -1;
   grid-row-start: row-2-start; */
   grid-area: main;
+  justify-self: center;
+  align-self: center;
 }
 
 .el3 {
