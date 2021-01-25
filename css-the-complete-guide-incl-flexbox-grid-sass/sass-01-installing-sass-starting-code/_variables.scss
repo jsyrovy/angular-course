@@ -1,0 +1,11 @@
+$colors: (
+  main: #521751,
+  secondary: #fa923f,
+);
+$main-color-light: lighten(map-get($colors, main), 72%);
+$main-border: 0.05rem solid map-get($colors, main);
+$size-default: 1rem;
+$size-extra-small: $size-default * 0.1;
+$size-small: $size-default * 0.2;
+$size-medium: $size-default * 2;
+$size-large: $size-default * 3;
