@@ -7,23 +7,35 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    backdrop.classList.add("open");
     modal.classList.add("open");
+    backdrop.style.display = "block";
+    setTimeout(() => {
+      backdrop.classList.add("open");
+    }, 10);
   });
 });
 
 modalAction?.addEventListener("click", () => {
-  backdrop.classList.remove("open");
   modal.classList.remove("open");
+  backdrop.classList.remove("open");
+  setTimeout(() => {
+    backdrop.style.display = "none";
+  }, 200);
 });
 
 toggleButton.addEventListener("click", () => {
-  backdrop.classList.add("open");
+  backdrop.style.display = "block";
+  setTimeout(() => {
+    backdrop.classList.add("open");
+  }, 10);
   mobileNav.classList.add("open");
 });
 
 backdrop.addEventListener("click", () => {
-  backdrop.classList.remove("open");
   mobileNav.classList.remove("open");
   modal?.classList.remove("open");
+  backdrop.classList.remove("open");
+  setTimeout(() => {
+    backdrop.style.display = "none";
+  }, 200);
 });
