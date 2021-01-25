@@ -28,11 +28,15 @@ body {
   box-sizing: border-box;
 }
 
-.sass-introduction {
+.sass-section {
   border: $main-border;
   background: $main-color-light;
   padding: $size-medium;
   text-align: center;
+}
+
+.sass-introduction {
+  @extend .sass-section;
   box-shadow: $size-small $size-small $size-extra-small #ccc;
   width: 90%;
   box-sizing: border-box;
@@ -47,10 +51,7 @@ body {
 }
 
 .sass-details {
-  border: $main-border;
-  background: $main-color-light;
-  padding: $size-default;
-  text-align: center;
+  @extend .sass-section;
   margin: $size-medium 0;
   width: 90%;
   box-sizing: border-box;
