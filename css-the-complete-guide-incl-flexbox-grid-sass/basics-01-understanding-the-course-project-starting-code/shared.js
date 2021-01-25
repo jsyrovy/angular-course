@@ -4,6 +4,7 @@ const modal = document.querySelector(".modal");
 const modalAction = document.querySelector("button.modal__action");
 const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
+const ctaButton = document.querySelector(".main-nav__item--cta");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -38,4 +39,16 @@ backdrop.addEventListener("click", () => {
   setTimeout(() => {
     backdrop.style.display = "none";
   }, 200);
+});
+
+ctaButton.addEventListener("animationstart", (event) => {
+  console.log("Animation started", event);
+});
+
+ctaButton.addEventListener("animationend", (event) => {
+  console.log("Animation ended", event);
+});
+
+ctaButton.addEventListener("animationiteration", (event) => {
+  console.log("Animation started", event);
 });
