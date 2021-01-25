@@ -2,16 +2,19 @@
   margin: 20px;
   display: grid;
   /* grid-template-columns: 200px 150px 20% 1fr; */
-  grid-template-columns: [hd-start] repeat(4, [col-start] 25% [col-end]) [hd-end];
+  grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
   grid-template-rows:
-    [hd-start] 5rem [hd row-2-start] minmax(10px, 200px)
+    [hd-start] 5rem [hd row-2-start] minmax(10px, 20rem)
     [row-2-end];
   grid-template-areas:
     "header header header header"
     "side . main main"
     "footer footer footer footer";
   grid-gap: 10px;
-  height: 500px;
+  height: 800px;
+  width: 800px;
+  justify-content: center;
+  align-content: center;
 }
 
 .el1 {
