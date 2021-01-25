@@ -3,6 +3,10 @@
 
 html {
   font-size: 94.75%;
+
+  @media (min-width: $min-width) {
+    font-size: 125%;
+  }
 }
 
 body {
@@ -33,6 +37,10 @@ body {
   width: 90%;
   box-sizing: border-box;
 
+  @media (min-width: $min-width) {
+    width: 30rem;
+  }
+
   p {
     margin: 0;
   }
@@ -46,6 +54,10 @@ body {
   margin: $size-medium 0;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: $min-width) {
+    width: 30rem;
+  }
 }
 
 .section-header {
@@ -84,16 +96,5 @@ body {
     color: white;
     background: map-get($colors, secondary);
     border-color: map-get($colors, secondary);
-  }
-}
-
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
-  .sass-introduction,
-  .sass-details {
-    width: 30rem;
   }
 }
