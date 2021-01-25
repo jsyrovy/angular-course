@@ -1,6 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("images/freedom.jpg") center / cover no-repeat border-box, #ff1b68;
+    url("images/freedom.jpg") center / cover no-repeat border-box, var(--highlight-color);
   width: 100%;
   height: 33vh;
   position: relative;
@@ -52,7 +52,7 @@
 }
 
 .plan__title {
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .plan__price {
@@ -64,7 +64,7 @@
 }
 
 .plan--highlighted .plan__price {
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .plan__features {
@@ -104,7 +104,7 @@
 }
 
 #key-features {
-  background: #ff1b68;
+  background: var(--highlight-color);
   margin-top: 5rem;
   padding: 1rem;
 }
