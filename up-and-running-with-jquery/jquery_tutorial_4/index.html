@@ -8,12 +8,23 @@
       <p>This is a sentence</p>
       <p class="super">Here's another one</p>
       <h4 class="super">Don't forget this one!</h4>
+      <h4 id="not-super">Don't forget this one too!</h4>
     </div>
 
     <script src="../../shared/js/jquery-3.1.1.min.js"></script>
 
     <script>
-      $("p").hide();
+      // $("h4").addClass("colorful timestwo");
+      // $("h4").removeClass("timestwo");
+
+      // $("p.super").addClass("colorful timestwo");
+
+      // $("p.super,h4.super").addClass("colorful timestwo");
+
+      $(".super").addClass("colorful timestwo");
+      
+      $("#not-super").addClass("colorful timestwo");
+      $("#not-super").toggleClass("colorful");
     </script>
   </body>
 </html>
