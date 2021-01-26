@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>INVOICE FORM</h1>
+    </div>
+    <div id="smart">
+      <table id="language_tbl">
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td><input type="textbox" id="itm_1" class="txtbox_itm" /></td>
+          <td><input type="textbox" id="quant_1" class="txtbox" /></td>
+          <td><input type="textbox" id="rate_1" class="txtbox" /></td>
+          <td><input type="textbox" id="amount_1" class="txtbox" /></td>
+        </tr>
+      </table>
+      <button type="button" id="calculate">Calculate</button>
+    </div>
+    <div id="calc_output">
+      <h2 id="output"></h2>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/custom_jquery_code.js"></script>
+  </body>
+</html>
