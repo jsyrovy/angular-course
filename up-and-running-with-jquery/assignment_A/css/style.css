@@ -1,0 +1,13 @@
+.stem {
+  display: none;
+}
+
+.congrats {
+  color: green;
+  font-size: 3em;
+}
+
+#jigger {
+  font-size: 3em;
+  color: green;
+}
