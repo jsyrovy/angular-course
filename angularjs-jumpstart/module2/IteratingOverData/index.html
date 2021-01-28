@@ -3,7 +3,26 @@
   <head>
     <title>Iterating Over Data</title>
   </head>
-  <body ng-init="names=['Dave','Jeff','Heedy','Danny']">
+  <!-- <body ng-init="names=['Dave','Jeff','Heedy','Danny']"> -->
+  <body
+    ng-init="people=[{name: 'John', city: 'Chandler'}, {name: 'Mike', city: 'London'}, {name: 'Kate', city: 'Bristol'}]"
+  >
+    <ul>
+      <li ng-repeat="person in people">
+        {{ person.name }} ({{ person.city }})
+      </li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+      </tr>
+      <tr ng-repeat="person in people">
+        <td>{{ person.name }}</td>
+        <td>{{ person.city }}</td>
+      </tr>
+    </table>
     <script src="../../shared/js/angular.js"></script>
   </body>
 </html>
