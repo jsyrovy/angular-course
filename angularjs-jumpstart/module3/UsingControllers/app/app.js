@@ -1,1 +1,5 @@
-const app = angular.module("customersApp", []);
+// const app = angular.module("customersApp", []);
+
+(function () {
+  const app = angular.module("customersApp", []);
+})();
