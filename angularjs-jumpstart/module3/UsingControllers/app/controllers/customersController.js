@@ -73,10 +73,10 @@
 // })();
 
 (function () {
-  const CustomersController = function ($scope) {
-    $scope.sortBy = "name";
-    $scope.reverse = false;
-    $scope.customers = [
+  const CustomersController = function (s) {
+    s.sortBy = "name";
+    s.reverse = false;
+    s.customers = [
       {
         joined: "2000-12-02",
         name: "John",
@@ -102,11 +102,13 @@
         orderTotal: 101.5,
       },
     ];
-    $scope.doSort = function (propName) {
-      $scope.sortBy = propName;
-      $scope.reverse = !$scope.reverse;
+    s.doSort = function (propName) {
+      s.sortBy = propName;
+      s.reverse = !s.reverse;
     };
   };
+
+  CustomersController.$inject = ["$scope"];
 
   angular
     .module("customersApp")
