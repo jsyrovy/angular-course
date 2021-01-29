@@ -1,4 +1,4 @@
-function CustomersController($scope) {
+app.controller("CustomersController", function ($scope) {
   $scope.sortBy = "name";
   $scope.reverse = false;
   $scope.customers = [
@@ -31,4 +31,4 @@ function CustomersController($scope) {
     $scope.sortBy = propName;
     $scope.reverse = !$scope.reverse;
   };
-}
+});
